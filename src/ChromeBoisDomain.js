@@ -44,8 +44,8 @@ resizeHandler = (event) => {
     return (
       <canvas 
         onMouseMove={this.handleMouseMove}
-        onClick={this.handleClick}
-        onKeyPress={this.handleKeyPress}
+        onClick={this.toggleHandler}
+        onKeyDown={this.resizeHandler}
         width='900'
         height='600'
         tabIndex="0">
